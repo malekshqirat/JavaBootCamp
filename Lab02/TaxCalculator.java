@@ -12,25 +12,25 @@ public class TaxCalculator {
 			
 			tax = (int) (amount*0.1);
 			finalSalary= originalSalary-tax;
-			System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.1 " + ", Tax= " + tax + " , Net Salary= " + finalSalary);}//if statement end
+			System.out.println("originalSalary: " + originalSalary + ", Tax Rate is : 10% " + ", Tax= " + tax + " , Net Salary= " + finalSalary);}//if statement end
 			
 		else if( amount > 23000 && amount <= 50000 ) {
 			
 			tax = (int)(amount*0.2);
 			finalSalary= originalSalary-tax;
-		    System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.2 " + ", Tax= "  + tax + " , Net Salary= " + finalSalary);}//else if statement end
+		    System.out.println("originalSalary: " + originalSalary + ", Tax Rate is : 20% " + ", Tax= "  + tax + " , Net Salary= " + finalSalary);}//else if statement end
 	
 		else if( amount < 50000 && amount <= 100000) {
 			
 			tax = (int)(amount*0.3);
 			finalSalary= originalSalary-tax;
-		    System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.3 " + ", Tax= "  + tax + " , Net Salary= " + finalSalary);}//else if statement end
+		    System.out.println("originalSalary: " + originalSalary + ", Tax Rate is : 30% " + ", Tax= "  + tax + " , Net Salary= " + finalSalary);}//else if statement end
 
 		else {
 			
 			tax = (int)(amount*0.4);
 			finalSalary= originalSalary-tax;
-		    System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.4 " + ", Tax= "  + tax + " , Net Salary= " + finalSalary);}//else statement end
+		    System.out.println("originalSalary: " + originalSalary + ", Tax Rate is : 40% " + ", Tax= "  + tax + " , Net Salary= " + finalSalary);}//else statement end
 		
 		
 			
