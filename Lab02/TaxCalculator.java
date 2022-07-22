@@ -5,27 +5,32 @@ public class TaxCalculator {
 	public void CalculateTheTax(int amount)
 	{
 		int originalSalary = amount;
-		float tax;
+		int tax;
+		int finalSalary;
 		
 		if( amount <= 23000) {
 			
-			tax = (float) (amount*0.1);
-			System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.1 " + ", TaxPercentage= " + tax);}//if statement end
+			tax = (int) (amount*0.1);
+			finalSalary= originalSalary-tax;
+			System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.1 " + ", Tax= " + tax + " , Net Salary= " + finalSalary);}//if statement end
 			
 		else if( amount > 23000 && amount <= 50000 ) {
 			
-			tax = (float)(amount*0.2);
-		    System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.2 " + ", TaxPercentage= "  + tax);}//else if statement end
+			tax = (int)(amount*0.2);
+			finalSalary= originalSalary-tax;
+		    System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.2 " + ", Tax= "  + tax + " , Net Salary= " + finalSalary);}//else if statement end
 	
 		else if( amount < 50000 && amount <= 100000) {
 			
-			tax = (float)(amount*0.3);
-		    System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.3 " + ", TaxPercentage= "  + tax);}//else if statement end
+			tax = (int)(amount*0.3);
+			finalSalary= originalSalary-tax;
+		    System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.3 " + ", Tax= "  + tax + " , Net Salary= " + finalSalary);}//else if statement end
 
 		else {
 			
-			tax = (float)(amount*0.4);
-		    System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.4 " + ", TaxPercentage= "  + tax);}//else statement end
+			tax = (int)(amount*0.4);
+			finalSalary= originalSalary-tax;
+		    System.out.println("originalSalary: " + originalSalary + ", tax = originalSalary*0.4 " + ", Tax= "  + tax + " , Net Salary= " + finalSalary);}//else statement end
 		
 		
 			
